@@ -1,6 +1,6 @@
 # Bailiff
 
-Tax calculator for the Polkadot ecosystem based on the HMRC Crypto Tax guidelines.
+Tax calculator for Polkadot, Ethereum and Bitcoin ecosystems based on the HMRC Crypto Tax guidelines.
 
 # Plans
 
