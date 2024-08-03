@@ -1,10 +1,30 @@
 [package]
+edition = "2021"
 name = "bailiff"
 version = "0.0.0"
-edition = "2021"
 
 [[bin]]
-path = "src/main.rs"
 name = "bailiff"
+path = "cli/main.rs"
+
+[[bin]]
+name = "bailiff-server"
+path = "server/main.rs"
 
 [dependencies]
+alloy = { version = "0.2.1", features = ["full"] }
+anyhow = "1.0.86"
+bigdecimal = "0.4.5"
+btcrpc = { package = "bitcoincore-rpc", git = "https://github.com/rust-bitcoin/rust-bitcoincore-rpc" }
+clap = "4.5.13"
+colored = "2.1.0"
+futures = "0.3.30"
+hex = "0.4.3"
+parity-scale-codec = "3.6.12"
+serde = "1.0.204"
+serde_json = "1.0.122"
+sqlx = { version = "0.8.0", features = ["runtime-tokio-native-tls", "postgres"] }
+subxt = "0.37.0"
+subxt-signer = "0.37.0"
+tokio = { version = "1.39.2", features = ["full"] }
+toml = "0.8.19"
