@@ -1,0 +1,29 @@
+[package]
+edition = "2021"
+name = "bailiff-polkadot"
+version = "0.0.1"
+
+[[bin]]
+name = "bailiff-polkadot"
+path = "src/main.rs"
+
+[dependencies]
+parity-scale-codec = "3.6.12"
+subxt = "0.38.0"
+subxt-signer = "0.38.0"
+
+anyhow = { workspace = true }
+bigdecimal = { workspace = true }
+clap = { workspace = true }
+colored = { workspace = true }
+futures = { workspace = true }
+hex = { workspace = true }
+prometheus = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+sqlx = { workspace = true }
+tokio = { workspace = true }
+toml = { workspace = true }
+tracing = { workspace = true }
+tracing-opentelemetry = { workspace = true }
+tracing-subscriber = { workspace = true }
